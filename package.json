@@ -6,8 +6,12 @@
   "scripts": {
     "build-dev": "webpack --colors --config webpack.config.js --mode development",
     "build-prod": "webpack --colors --config webpack.config.js --mode production",
+    "watch-dev": "webpack --watch --colors --config webpack.config.js --mode development",
+    "watch-prod": "webpack --watch --colors --config webpack.config.js --mode production",
     "build": "npm run build-prod",
-    "test": "jest"
+    "test": "jest",
+    "watch-test": "jest --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",
