@@ -6,12 +6,15 @@
   "scripts": {
     "build-dev": "webpack --colors --config webpack.config.js --mode development",
     "build-prod": "webpack --colors --config webpack.config.js --mode production",
-    "watch-dev": "webpack --watch --colors --config webpack.config.js --mode development",
-    "watch-prod": "webpack --watch --colors --config webpack.config.js --mode production",
-    "build": "npm run build-prod",
+    "build-dev.watch": "npm run build-dev -- --watch",
+    "build-prod.watch": "npm run build-prod -- --watch",
+    "build": "npm run format && npm run lint && npm run test && npm run build-prod",
     "test": "jest",
-    "watch-test": "jest --watch",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "test.watch": "npm run test -- --watch",
+    "lint": "eslint . --color --fix --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write src/**/*.ts",
+    "format.check": "prettier --check src/**/*.ts",
+    "format.list-different": "prettier --list-different src/**/*.ts"
   },
   "repository": {
     "type": "git",
