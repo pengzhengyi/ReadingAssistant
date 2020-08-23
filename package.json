@@ -1,0 +1,23 @@
+{
+  "name": "readingassistant",
+  "version": "1.0.0",
+  "description": "Browser extension to improve reading experience",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengzhengyi/ReadingAssistant.git"
+  },
+  "keywords": [
+    "browser-extension",
+    "reading"
+  ],
+  "author": "pengzhengyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pengzhengyi/ReadingAssistant/issues"
+  },
+  "homepage": "https://github.com/pengzhengyi/ReadingAssistant#readme"
+}
