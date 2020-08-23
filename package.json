@@ -4,6 +4,9 @@
   "description": "Browser extension to improve reading experience",
   "main": "index.js",
   "scripts": {
+    "build-dev": "webpack --colors --config webpack.config.js --mode development",
+    "build-prod": "webpack --colors --config webpack.config.js --mode production",
+    "build": "npm run build-prod",
     "test": "jest"
   },
   "repository": {
@@ -19,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/pengzhengyi/ReadingAssistant/issues"
   },
-  "homepage": "https://github.com/pengzhengyi/ReadingAssistant#readme"
+  "homepage": "https://github.com/pengzhengyi/ReadingAssistant#readme",
+  "devDependencies": {
+    "ts-loader": "^8.0.2",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
